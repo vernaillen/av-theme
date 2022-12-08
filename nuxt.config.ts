@@ -29,12 +29,25 @@ export default defineNuxtConfig({
     highlight: {
       theme: {
         dark: 'github-dark',
-        default: 'github-light'
+        default: 'github-light',
       },
-      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini']
+      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini'],
     },
     navigation: {
-      fields: ['icon', 'titleTemplate', 'aside']
-    }
-  }
+      fields: ['icon', 'titleTemplate', 'aside'],
+    },
+  },
+  i18n: {
+    strategy: 'prefix_and_default',
+    defaultLocale: 'en',
+    langDir: './locales/',
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en-US.json' },
+      { code: 'nl', iso: 'en-BE', file: 'nl-BE.json' },
+    ],
+    detectBrowserLanguage: {
+      useCookie: true,
+      redirectOn: 'root', // recommended
+    },
+  },
 })

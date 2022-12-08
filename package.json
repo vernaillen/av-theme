@@ -1,6 +1,6 @@
 {
   "name": "av-theme",
-  "description": "nuxt theme for anneleenvernaillen.com",
+  "description": "nuxt theme",
   "type": "module",
   "version": "0.0.2",
   "main": "./nuxt.config.ts",
@@ -9,28 +9,32 @@
     "build": "nuxi build .playground",
     "generate": "nuxi generate .playground",
     "preview": "nuxi preview .playground",
-    "lint": "eslint .",
+    "lint": "eslint",
     "release": "release-it"
   },
   "dependencies": {
     "@nuxt/content": "^2.2.2",
-    "@nuxt/kit": "^3.0.0",
-    "@vueuse/core": "^9.6.0",
-    "@vueuse/nuxt": "^9.6.0",
-    "animate.css": "^4.1.1"
-  },
-  "devDependencies": {
     "@nuxt/image-edge": "1.0.0-27840416.dc1ed65",
-    "@nuxtjs/eslint-config-typescript": "^12.0.0",
+    "@nuxt/kit": "^3.0.0",
     "@nuxtjs/google-fonts": "3.0.0-1",
     "@nuxtjs/i18n": "8.0.0-beta.6",
     "@nuxtjs/tailwindcss": "^6.1.3",
+    "@vueuse/core": "^9.6.0",
+    "@vueuse/nuxt": "^9.6.0",
+    "animate.css": "^4.1.1",
+    "nuxt-icon": "^0.1.8",
+    "remark-directive-rehype": "^0.4.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.33.1",
+    "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "eslint": "^8.29.0",
     "nuxt": "^3.0.0",
-    "nuxt-icon": "^0.1.8",
     "release-it": "^15.5.1",
-    "remark-directive-rehype": "^0.4.2",
     "typescript": "^4.9.4"
+  },
+  "eslintConfig": {
+    "extends": "@antfu"
   },
   "pnpm": {
     "peerDependencyRules": {
