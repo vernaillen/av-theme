@@ -5,6 +5,8 @@ logger.success(`Using av-theme v${version} by Wouter Vernaillen`)
 
 const { resolve } = createResolver(import.meta.url)
 
+export { MenuItem } from './composables/types'
+
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
