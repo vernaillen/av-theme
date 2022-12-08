@@ -2,7 +2,7 @@
   "name": "av-theme",
   "description": "nuxt theme for anneleenvernaillen.com",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./nuxt.config.ts",
   "scripts": {
     "dev": "nuxi prepare & nuxi dev .playground",
