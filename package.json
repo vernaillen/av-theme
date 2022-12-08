@@ -9,7 +9,8 @@
     "build": "nuxi build .playground",
     "generate": "nuxi generate .playground",
     "preview": "nuxi preview .playground",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "release": "release-it"
   },
   "dependencies": {
     "@nuxt/content": "^2.2.2",
