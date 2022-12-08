@@ -52,4 +52,7 @@ export default defineNuxtConfig({
       redirectOn: 'root', // recommended
     },
   },
+  generate: {
+    routes: ['/', '/test'],
+  },
 })
