@@ -7,8 +7,3 @@ export interface Post {
   image: string
   thumbnail: string
 }
-
-export interface MenuItem {
-  title: string
-  url: string
-}

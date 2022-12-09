@@ -23,6 +23,13 @@ export default defineNuxtConfig({
     resolve('./assets/css/prose.css'),
     'animate.css/animate.min.css',
   ],
+  googleFonts: {
+    download: true,
+    display: 'swap',
+    families: {
+      Poppins: [300, 400, 500, 700],
+    },
+  },
   content: {
     documentDriven: true,
     markdown: {
@@ -35,17 +42,14 @@ export default defineNuxtConfig({
       },
       preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini'],
     },
-    navigation: {
-      fields: ['icon', 'titleTemplate', 'aside'],
-    },
   },
   i18n: {
     strategy: 'prefix_and_default',
     defaultLocale: 'en',
-    langDir: './locales/',
+    langDir: './lang/',
     locales: [
-      { code: 'en', iso: 'en-US', file: 'en-US.json' },
-      { code: 'nl', iso: 'en-BE', file: 'nl-BE.json' },
+      { code: 'en', iso: 'en-US', file: 'en.yml' },
+      { code: 'nl', iso: 'en-BE', file: 'nl.yml' },
     ],
     detectBrowserLanguage: {
       useCookie: true,
