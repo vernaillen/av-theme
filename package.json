@@ -6,9 +6,7 @@
   "main": "./nuxt.config.ts",
   "scripts": {
     "dev": "nuxi prepare & nuxi dev .playground",
-    "dev:docs": "nuxi dev .docs",
     "build": "nuxi build .playground",
-    "build:docs": "nuxi build .docs",
     "generate": "nuxi generate .playground",
     "preview": "nuxi preview .playground",
     "test": "vitest",

@@ -3,5 +3,6 @@
   NODE_VERSION = "18"
 
 [build]
+  base = ".docs"
   publish = "dist"
   command = "pnpm run build"
