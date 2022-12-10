@@ -1,24 +1,15 @@
+<script lang="ts" setup>
+const appConfig = useAppConfig()
+</script>
+
 <template>
   <a
-    class="text-gray hover:text-black mx-2" href="https://www.instagram.com/anneleenvernaillen/" rel="noopener"
-    target="_blank"
-    alt="Instagram"
-    aria-label="Instagram"
+    v-for="social, index in appConfig.socials" :key="index"
+    :href="social.url" target="_blank" :title="social.title"
+    :alt="social.title" :aria-label="social.title"
+    class="text-gray hover:text-black mx-2"
   >
-    <Icon name="mdi:instagram" size="2em" />
-  </a>
-  <a
-    class="text-gray hover:text-black mx-2" href="https://www.linkedin.com/in/anneleen-vernaillen/" rel="noopener"
-    target="_blank"
-    alt="LinkedIn"
-    aria-label="LinkedIn"
-  >
-    <Icon name="mdi:linkedin" size="2em" />
+    <Icon :name="social.icon" size="1.6em" />
   </a>
 </template>
 
-<style scoped>
-.icon {
-    height: 1.8rem;
-}
-</style>

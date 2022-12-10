@@ -14,7 +14,7 @@ const navbarCollapseClass = computed(() => {
 </script>
 
 <template>
-  <header class="w-full flex items-center p-5">
+  <header class="w-full flex items-center p-8">
     <div class="container-fluid w-full">
       <div class="sm:flex justify-between relative">
         <div class="max-w-full pt-20 sm:pt-0">
@@ -68,7 +68,7 @@ const navbarCollapseClass = computed(() => {
           >
             <menu-component @hide-nav="navbar.show = false" />
           </nav>
-          <div class="absolute top-0 flex sm:relative justify-end pt-2 sm:pr-20 xl:pr-0 mr-[-10px]">
+          <div class="absolute top-1 flex sm:relative justify-end pt-2 sm:pr-20 lg:pr-10 2xl:pr-0 mr-[-10px]">
             <social-icons />
           </div>
         </div>

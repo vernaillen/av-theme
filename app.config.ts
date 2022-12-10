@@ -1,14 +1,17 @@
 export default defineAppConfig({
   myProject: {
-    name: 'nuxt theme for anneleenvernaillen.com'
-  }
+    name: '',
+  },
+  socials: [
+    {
+      $ref: '#/definitions/social',
+    },
+  ],
+  definitions: {
+    social: {
+      name: '',
+      url: '',
+      icon: '',
+    },
+  },
 })
-
-declare module '@nuxt/schema' {
-  interface AppConfigInput {
-    myProject?: {
-      /** Project name */
-      name?: string
-    }
-  }
-}

@@ -12,7 +12,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/image-edge',
     '@nuxtjs/google-fonts',
-    '@nuxtjs/i18n',
+    // '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
     'nuxt-icon',
@@ -43,7 +43,7 @@ export default defineNuxtConfig({
       preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini'],
     },
   },
-  i18n: {
+  /* i18n: {
     strategy: 'prefix_and_default',
     defaultLocale: 'en',
     langDir: './lang/',
@@ -55,7 +55,7 @@ export default defineNuxtConfig({
       useCookie: true,
       redirectOn: 'root', // recommended
     },
-  },
+  }, */
   generate: {
     routes: ['/', '/test'],
   },
