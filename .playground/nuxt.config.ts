@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   image: {
     provider: 'twicpics',
     twicpics: {
-      baseURL: 'https://vernaillen.twic.pics/anneleen',
+      baseURL: 'https://vernaillen.twic.pics/av-theme',
     },
   },
   generate: {
