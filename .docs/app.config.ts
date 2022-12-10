@@ -1,6 +1,7 @@
 export default defineAppConfig({
   docus: {
     title: 'av-theme',
+    description: 'getting ready for next level',
     socials: {
       github: 'vernaillen/av-theme',
     },
