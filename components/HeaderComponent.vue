@@ -29,23 +29,23 @@ const navbarCollapseClass = computed(() => {
             />
           </router-link>
         </div>
-        <div class="max-w-full">
+        <div class="max-w-full w-full">
           <router-link to="/">
             <div class="pt-[33px]">
               <svg
-                class="mx-auto sm:mx-0 sm:w-[200px]" width="246" height="25"
-                viewBox="0 0 246 25"
+                class="mx-auto sm:mx-0 sm:w-[130px]" width="120" height="25"
+                viewBox="0 0 129 25"
               >
                 <text
                   id="Anneleen_Vernaillen" data-name="Anneleen Vernaillen" transform="translate(0 20)" fill="#222"
                   font-size="22" font-family="'Poppins', Helvetica Neue" font-weight="500"
                 >
-                  <tspan x="0" y="0">ANNELEEN VERNAILLEN</tspan>
+                  <tspan x="0" y="0">AV-THEME</tspan>
                 </text>
               </svg>
             </div>
             <h4 class="leading-10 sm:leading-4 table mx-auto sm:block sm:mx-0">
-              VISUAL ARTIST
+              getting ready for next level
             </h4>
           </router-link>
         </div>
