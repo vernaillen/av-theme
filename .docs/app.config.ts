@@ -22,7 +22,7 @@ export default defineAppConfig({
     footer: {
       credits: {
         icon: 'IconDocus',
-        text: 'av-theme created by Wouter Vernaillen',
+        text: 'av-theme is created by Wouter Vernaillen',
         href: 'https://vernaillen.dev',
       }
     }
