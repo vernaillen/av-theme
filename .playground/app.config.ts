@@ -19,7 +19,7 @@ export default defineAppConfig({
       title: 'Mastodon',
       url: 'https://fosstodon.org/@vernaillen',
       icon: 'mdi:mastodon'
-    },
+    }
   ]
 })
 

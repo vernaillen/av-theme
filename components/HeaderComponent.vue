@@ -69,7 +69,7 @@ const navbarCollapseClass = computed(() => {
           >
             <menu-component @hide-nav="navbar.show = false" />
           </nav>
-          <div class="absolute top-1 flex sm:relative justify-end pt-2 sm:pr-20 lg:pr-10 2xl:pr-0 mr-[-10px]">
+          <div class="absolute top-0 flex sm:relative justify-end pt-2 sm:pr-20 2xl:pr-0 mr-[-10px]">
             <social-icons />
           </div>
         </div>

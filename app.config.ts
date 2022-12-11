@@ -1,7 +1,4 @@
 export default defineAppConfig({
-  myProject: {
-    name: '',
-  },
   socials: [
     {
       $ref: '#/definitions/social',
@@ -9,7 +6,7 @@ export default defineAppConfig({
   ],
   definitions: {
     social: {
-      name: '',
+      title: '',
       url: '',
       icon: '',
     },
