@@ -33,21 +33,13 @@ const navbarCollapseClass = computed(() => {
         <div class="max-w-full w-full">
           <router-link to="/">
             <div class="pt-[33px]">
-              <svg
-                class="mx-auto sm:mx-0 sm:w-[130px]" width="120" height="25"
-                viewBox="0 0 129 25"
-              >
-                <text
-                  id="Anneleen_Vernaillen" data-name="Anneleen Vernaillen" transform="translate(0 20)" fill="#222"
-                  font-size="22" font-family="'Poppins', Helvetica Neue" font-weight="500"
-                >
-                  <tspan x="0" y="0">{{ t('header.title') }}</tspan>
-                </text>
-              </svg>
+              <h1 class="mb-0 text-2xl table mx-auto sm:block">
+                {{ t('header.title') }}
+              </h1>
+              <h4 class="leading-10 sm:leading-4 table mx-auto sm:block sm:mx-0">
+                {{ t('header.subtitle') }}
+              </h4>
             </div>
-            <h4 class="leading-10 sm:leading-4 table mx-auto sm:block sm:mx-0">
-              {{ t('header.subtitle') }}
-            </h4>
           </router-link>
         </div>
         <div class="flex px-4 justify-end items-center w-full">
