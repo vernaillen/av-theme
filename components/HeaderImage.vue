@@ -2,7 +2,9 @@
 const $img = useImage()
 const { page } = useContent()
 const url = computed(() => {
-  return page.value.image.src
+  if (page.value && page.value.image)
+    return page.value.image.src
+  else return 'header-imgs/header.png'
 })
 
 // settings
@@ -25,8 +27,6 @@ const imgWrapper = computed(() => {
 })
 const imgBackground = computed(() => {
   const imgUrl = $img(url.value, { format: 'webp' })
-  console.log(url.value)
-  console.log(imgUrl)
   if (url.value && url.value.length > 0) {
     return {
       'height': `${image.height}px`,

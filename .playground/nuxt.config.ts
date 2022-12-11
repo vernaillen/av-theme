@@ -10,6 +10,6 @@ export default defineNuxtConfig({
     },
   },
   generate: {
-    routes: ['/', '/test', '/markdown-cheat-sheet', '/alfa'],
+    routes: ['/', '/test', '/markdown-cheat-sheet', '/columns'],
   },
 })
