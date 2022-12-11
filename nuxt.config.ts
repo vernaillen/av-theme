@@ -5,14 +5,12 @@ logger.success(`Using av-theme v${version} by Wouter Vernaillen`)
 
 const { resolve } = createResolver(import.meta.url)
 
-export { MenuItem } from './composables/types'
-
 export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/image-edge',
     '@nuxtjs/google-fonts',
-    // '@nuxtjs/i18n',
+    '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
     'nuxt-icon',
@@ -43,7 +41,7 @@ export default defineNuxtConfig({
       preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini'],
     },
   },
-  /* i18n: {
+  i18n: {
     strategy: 'prefix_and_default',
     defaultLocale: 'en',
     langDir: './lang/',
@@ -55,7 +53,7 @@ export default defineNuxtConfig({
       useCookie: true,
       redirectOn: 'root', // recommended
     },
-  }, */
+  },
   generate: {
     routes: ['/', '/test'],
   },

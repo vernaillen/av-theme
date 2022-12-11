@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const { t } = useI18n()
 const navbar = reactive({
   show: false,
 })
@@ -40,12 +41,12 @@ const navbarCollapseClass = computed(() => {
                   id="Anneleen_Vernaillen" data-name="Anneleen Vernaillen" transform="translate(0 20)" fill="#222"
                   font-size="22" font-family="'Poppins', Helvetica Neue" font-weight="500"
                 >
-                  <tspan x="0" y="0">AV-THEME</tspan>
+                  <tspan x="0" y="0">{{ t('header.title') }}</tspan>
                 </text>
               </svg>
             </div>
             <h4 class="leading-10 sm:leading-4 table mx-auto sm:block sm:mx-0">
-              getting ready for next level
+              {{ t('header.subtitle') }}
             </h4>
           </router-link>
         </div>
