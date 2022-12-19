@@ -18,3 +18,5 @@ dist
 
 # VSCode
 .vscode/
+coverage/
+cypress/screenshots/
