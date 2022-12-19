@@ -1,0 +1,53 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@5.0.3
+  sonarcloud: sonarsource/sonarcloud@1.1.1
+  slack: circleci/slack@4.12.0
+
+executors:
+  pnpm-executor:
+    docker:
+      - image: vernaillen/circleci-pnpm:19.2.0-browsers
+
+jobs:
+  build:
+    executor: pnpm-executor
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Install packages
+          command: pnpm install --frozen-lockfile
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Build
+          command: pnpm run build
+      - run:
+          name: Lint
+          command: pnpm run lint
+      - run:
+          name: Test
+          command: pnpm run coverage
+      - run:
+          name: Install Cypress
+          command: pnpm run cypress:install
+      - run:
+          name: Run Cypress
+          command: pnpm run cypress:run 
+      - slack/notify:
+          channel: circleci
+          event: always
+
+workflows:
+  version: 2
+  flow:
+    jobs:
+      - build:
+          context: 
+            - SonarCloud
+            - Slack
