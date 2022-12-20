@@ -1,58 +1,21 @@
 <script setup lang="ts">
-const $img = useImage()
 const { page } = useContent()
 const url = computed(() => {
   if (page.value && page.value.image)
     return page.value.image.src
   else return 'header-imgs/header.png'
 })
-
-// settings
-const imageRatio: number = 420 / 1920
-const minimumHeight = 280
-
-// calculations
-const calculateImageHeight = (screenWidth: number) => {
-  const calculatedHeight = screenWidth * imageRatio
-  return calculatedHeight <= minimumHeight ? minimumHeight : calculatedHeight
-}
-const image = reactive({
-  height: calculateImageHeight(window.innerWidth),
-})
-const imgWrapper = computed(() => {
-  return {
-    'height': `${image.height}px`,
-    'background-color': '#DCD8D1',
-  }
-})
-const imgBackground = computed(() => {
-  const imgUrl = $img(url.value, { format: 'webp' })
-  if (url.value && url.value.length > 0) {
-    return {
-      'height': `${image.height}px`,
-      'background-image': `url(${imgUrl})`,
-      'background-repeat': 'no-repeat',
-      'background-position': 'center center',
-      'background-size': 'cover',
-    }
-  }
-  else {
-    return {
-      'height': `${image.height}px`,
-      'background-color': '#DCD8D1',
-    }
-  }
-})
-
-onMounted(async () => {
-  window.onresize = () => {
-    image.height = calculateImageHeight(window.innerWidth)
-  }
-})
 </script>
 
 <template>
-  <div :style="imgWrapper">
-    <div :style="imgBackground" class="animate__animated animate__fadeIn" />
-  </div>
+  <NuxtImg
+    :src="url"
+    preload
+    format="webp"
+    height="350"
+    width="100vw"
+    fit="cover"
+    style="object-fit: cover;"
+    class="h-[280px] xl:h-[350px] w-full animate__animated animate__fadeIn"
+  />
 </template>
