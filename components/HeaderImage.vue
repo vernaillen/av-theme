@@ -8,14 +8,16 @@ const url = computed(() => {
 </script>
 
 <template>
-  <NuxtImg
-    :src="url"
-    preload
-    format="webp"
-    height="350"
-    width="100vw"
-    fit="cover"
-    style="object-fit: cover;"
-    class="h-[280px] xl:h-[350px] w-full animate__animated animate__fadeIn"
-  />
+  <div class="bg-[#DCD8D1] h-[280px] xl:h-[350px] w-full">
+    <NuxtImg
+      :src="url"
+      preload
+      format="webp"
+      height="350"
+      width="100vw"
+      fit="cover"
+      style="object-fit: cover;"
+      class="h-[280px] xl:h-[350px] w-full animate__animated animate__fadeIn animate__fast"
+    />
+  </div>
 </template>
