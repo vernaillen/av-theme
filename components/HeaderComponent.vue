@@ -16,13 +16,13 @@ const navbarCollapseClass = computed(() => {
 
 <template>
   <header class="w-full flex items-center p-8">
-    <div class="container-fluid w-full">
+    <div class="container max-w-screen-xl w-full">
       <div class="sm:flex justify-between relative">
         <div class="max-w-full pt-20 sm:pt-0">
           <router-link to="/">
             <NuxtImg
               src="avembleem.png"
-              class="object-contain h-[80px] pr-0 sm:mr-[32px] md:mr-[50px] max-w-none mx-auto"
+              class="object-contain h-[80px] pr-0 sm:mr-[32px] max-w-none mx-auto"
               width="110"
               height="96"
               alt="Logo Anneleen Vernaillen"
@@ -32,7 +32,7 @@ const navbarCollapseClass = computed(() => {
         </div>
         <div class="max-w-full">
           <router-link to="/">
-            <div class="pt-[33px] whitespace-nowrap">
+            <div class="pt-[28px] whitespace-nowrap">
               <h1 class="mb-0 text-2xl table sm:mx-0 mx-auto block whitespace-nowrap">
                 {{ t('header.title') }}
               </h1>
@@ -45,7 +45,7 @@ const navbarCollapseClass = computed(() => {
         <div class="flex px-4 justify-end items-center w-full">
           <button
             id="navbarToggler"
-            class="block absolute cursor-pointer translate-y-[-50%] xl:hidden left-0 top-5 sm:top-14 sm:left-auto sm:right-0 px-3 py-[6px] rounded-lg z-30"
+            class="block absolute cursor-pointer translate-y-[-50%] xl:hidden left-0 top-5 sm:top-[40px] sm:left-auto sm:right-0 px-3 py-[6px] rounded-lg z-30"
             :class="navbarTogglerClass" aria-label="Menu"
             @click="navbarToggler"
           >
@@ -61,7 +61,7 @@ const navbarCollapseClass = computed(() => {
           >
             <menu-component @hide-nav="navbar.show = false" />
           </nav>
-          <div class="absolute top-0 flex sm:relative justify-end pt-2 sm:pr-20 2xl:pr-0 mr-[-10px]">
+          <div class="absolute top-0 flex sm:relative justify-end sm:pr-20 xl:pr-0 mr-[-10px]">
             <social-icons />
           </div>
         </div>

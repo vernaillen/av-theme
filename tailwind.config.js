@@ -19,12 +19,13 @@ module.exports = {
       'md': '768px',
       'lg': '1024px',
       'xl': '1280px',
-      '2xl': '1536px',
+      '2xl': '1440px',
       '3xl': '1920px',
     },
     colors: {
       black: '#222222',
       gray: '#707070',
+      primary: '#DCD8D1',
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],

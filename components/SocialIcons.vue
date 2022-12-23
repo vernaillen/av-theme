@@ -11,9 +11,8 @@ const socials = appConfig.socials.filter((social) => {
     :key="index"
     :href="social.url" target="_blank" :title="social.title"
     :alt="social.title" :aria-label="social.title"
-    class="text-gray hover:text-black mx-2"
+    class="text-gray hover:text-black mx-1"
   >
-    <Icon v-if="social.icon" :name="social.icon" size="1.6em" />
+    <Icon v-if="social.icon" :name="social.icon" size="1.5em" />
   </a>
 </template>
-

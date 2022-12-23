@@ -8,7 +8,7 @@ const url = computed(() => {
 </script>
 
 <template>
-  <div class="bg-[#DCD8D1] h-[280px] xl:h-[350px] w-full">
+  <div class="bg-primary h-[280px] xl:h-[350px] w-full">
     <NuxtImg
       :src="url"
       preload
