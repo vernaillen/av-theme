@@ -26,13 +26,5 @@
       </div>
     </div>
   </div>
-  <div class="bg-primary w-full">
-    <div class="container max-w-screen-xl mt-20">
-      <div class="flex flex-wrap">
-        <div class="w-full px-4 sm:px-6 lg:px-8  mt-20 mb-10">
-          <InstagramPosts />
-        </div>
-      </div>
-    </div>
-  </div>
+  <InstagramPosts />
 </template>

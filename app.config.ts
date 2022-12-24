@@ -4,6 +4,9 @@ export default defineAppConfig({
       $ref: '#/definitions/social',
     },
   ],
+  tagembed: {
+    id: '',
+  },
   definitions: {
     social: {
       title: '',
