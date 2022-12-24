@@ -16,8 +16,11 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-icon',
   ],
+  tailwindcss: {
+    viewer: false,
+  },
   css: [
-    resolve('./assets/css/main.css'),
+    resolve('./assets/css/tailwind.css'),
     resolve('./assets/css/markdown.css'),
     resolve('./assets/css/prose.css'),
     'animate.css/animate.min.css',

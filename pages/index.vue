@@ -1,3 +1,8 @@
+<script setup lang="ts">
+const { t } = useI18n()
+const nrOfPosts = 1
+</script>
+
 <template>
   <div class="container max-w-screen-xl my-20">
     <div class="flex flex-wrap">
@@ -22,7 +27,8 @@
   <div class="container max-w-screen-xl my-20">
     <div class="flex flex-wrap">
       <div class="w-full px-4 sm:px-6 lg:px-8">
-        <h2>News / Archive</h2>
+        <h2>{{ t('news.titleOnHomepage') }}</h2>
+        <BlogPostList :nr-of-posts="nrOfPosts" :excerpt="true" />
       </div>
     </div>
   </div>

@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    'components/**/*.vue',
-    'pages/**/*.vue',
+    'components/*.vue',
+    'components/content/*.vue',
+    'pages/*.vue',
     'composables/**/*.{js,ts}',
     'plugins/**/*.{js,ts}',
     'App.{js,ts,vue}',
@@ -23,6 +24,7 @@ module.exports = {
       '3xl': '1920px',
     },
     colors: {
+      white: '#DCD8D1',
       black: '#222222',
       gray: '#707070',
       primary: '#DCD8D1',
