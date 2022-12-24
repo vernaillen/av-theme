@@ -77,7 +77,7 @@ const animateDurationClass = (index: number) => {
     <div class="relative bg-transparent mb-10">
       <NuxtLink v-if="post.thumbnail" :to="post._path" :aria-label="post.title">
         <nuxt-img
-          loading="lazy" width="432" height="200" :src="post.thumbnail" class="rounded-md mb-4"
+          loading="lazy" :src="post.thumbnail" class="mb-4"
           :alt="`thumbnail ${post.title}`"
         />
       </NuxtLink>

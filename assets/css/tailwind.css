@@ -23,6 +23,7 @@ h3,
 .prose h1,
 .prose h2,
 .prose h3 {
+  color: #222222;
   font-weight: 500;
 }
 h1,
@@ -42,8 +43,9 @@ h2,
 }
 h3,
 .prose h3 {
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 1.8em;
+  line-height: 0.8em;
+  font-weight: 300;
 }
 h4,
 .prose h4 {
