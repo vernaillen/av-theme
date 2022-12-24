@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import * as dayjs from 'dayjs'
+// import * as dayjs from 'dayjs'
 
 const props = defineProps({
   nrOfPosts: {
@@ -25,10 +25,10 @@ const { data } = await useAsyncData(`content-${path}`, () =>
 
 const { t } = useI18n()
 
-function formatDate(d: string) {
+/* function formatDate(d: string) {
   const date = dayjs(d)
   return date.format('D MMM YYYY')
-}
+} */
 const animateDurationClass = (index: number) => {
   return `animate-duration-${index * 1000}, animate-delay-${index * 100}`
 }
@@ -63,7 +63,7 @@ const animateDurationClass = (index: number) => {
         >
           <div class="w-full">
             <div class="text-xs text-body-color">
-              {{ formatDate(post.date) }}
+              {{ post.date }}
             </div>
           </div>
         </div>
