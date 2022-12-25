@@ -24,7 +24,7 @@ module.exports = {
       '3xl': '1920px',
     },
     colors: {
-      white: '#DCD8D1',
+      white: '#FFFEFD',
       black: '#222222',
       gray: '#707070',
       primary: '#DCD8D1',
