@@ -8,8 +8,8 @@ const tagembedId = appConfig.tagembed.id
     <div class="container max-w-screen-xl">
       <div class="flex flex-wrap">
         <div class="w-full px-4 sm:px-6 lg:px-8  mt-10 mb-10">
-          <div class="mb-6">
-            <SocialIcons filter-social="Instagram" size="2.5" />
+          <div class="mb-6 p-1">
+            <SocialIcons filter-social="Instagram" size="2" />
           </div>
           <iframe
             :src="`https://widget.tagembed.com/${tagembedId}?view`" style=" width:100%;height:400px;overflow: auto;"
